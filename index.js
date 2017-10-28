@@ -20,7 +20,13 @@ function appendKitten(name) {
   var moreKittens = [...kittens, name]
   return moreKittens
 }
+
 function prependKitten(name) {
   var moreKittens = [name, ...kittens]
   return moreKittens
+}
+
+function removeLastKitten() {
+  var lessKittens = kittens.slice(0, kitten.length-1)
+  return lessKittens
 }
